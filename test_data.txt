@@ -10,3 +10,10 @@ Invalid Bopomofo ㄅ ㄆ ㄇ
 
 # This line is valid
 小麥 ㄒㄧㄠˇ-ㄇㄞˋ
+
+# This line is valid (starts with _)
+< _punctuation_<
+Standard_< _punctuation_Stadard_<
+
+# This line is invalid (English but does not start with _)
+Invalid punctuation_<
