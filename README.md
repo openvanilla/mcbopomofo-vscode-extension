@@ -16,6 +16,66 @@ This extension provides syntax highlighting for McBopomofo `data.txt` and `exclu
 - **Valid Data**: `Phrase` followed by a space and a `Bopomofo-Sequence` (syllables connected by `-`) or an English macro (starting with `_`).
 - **Invalid Lines**: Any line that doesn't follow the above rules.
 
+## Installation
+
+### Install from VSIX (local install)
+
+1. Install dependencies:
+
+	```bash
+	npm install
+	```
+
+2. Package the extension:
+
+	```bash
+	npx @vscode/vsce package
+	```
+
+3. This creates a `.vsix` file in the project root, for example:
+
+	`mcbopomofo-vscode-extension-0.1.0.vsix`
+
+4. Install the `.vsix`:
+
+	- In VS Code: run **Extensions: Install from VSIX...** from the Command Palette.
+	- Or via CLI:
+
+	  ```bash
+	  code --install-extension mcbopomofo-vscode-extension-0.1.0.vsix
+	  ```
+
+5. Reload VS Code after installation.
+
+## Publish to Visual Studio Marketplace
+
+1. Create a publisher and get a Personal Access Token (PAT):
+
+	- Publisher: <https://marketplace.visualstudio.com/manage>
+	- PAT: <https://dev.azure.com>
+
+2. Login with `vsce`:
+
+	```bash
+	npx @vscode/vsce login <publisher-name>
+	```
+
+3. Publish the current version:
+
+	```bash
+	npx @vscode/vsce publish
+	```
+
+4. Or bump and publish in one command:
+
+	```bash
+	npx @vscode/vsce publish patch
+	```
+
+5. After publishing, users can install it from the Extensions Marketplace by searching:
+
+	`McBopomofo Data Editor`
+
 ## Development and Testing
 
 1. Open this repository in Visual Studio Code.
