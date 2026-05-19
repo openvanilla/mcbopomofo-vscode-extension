@@ -1,0 +1,12 @@
+# This is a comment
+玉置浩二 ㄩˋ-ㄓˋ-ㄏㄠˋ-ㄦˋ
+測試 ㄘㄜˋ-ㄕˋ
+
+# This line is invalid because it has no bopomofo
+InvalidLine
+
+# This line is invalid because bopomofo has spaces
+Invalid Bopomofo ㄅ ㄆ ㄇ
+
+# This line is valid
+小麥 ㄒㄧㄠˇ-ㄇㄞˋ

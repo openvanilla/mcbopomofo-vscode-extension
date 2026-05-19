@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "McBopomofo Data",
+  "scopeName": "source.mcbopomofo-data",
+  "patterns": [
+    {
+      "name": "comment.line.number-sign.mcbopomofo-data",
+      "match": "^#.*$"
+    },
+    {
+      "name": "meta.data-line.mcbopomofo-data",
+      "match": "^(\\S+)(\\s+)([ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦㄧㄨㄩ˙ˊˇˋ]+(-[ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦㄧㄨㄩ˙ˊˇˋ]+)*)$",
+      "captures": {
+        "1": { "name": "string.unquoted.mcbopomofo-data" },
+        "2": { "name": "punctuation.separator.mcbopomofo-data" },
+        "3": { "name": "entity.name.function.mcbopomofo-data" }
+      }
+    },
+    {
+      "name": "invalid.illegal.mcbopomofo-data",
+      "match": "^(?!#|\\s*$).+$"
+    }
+  ],
+  "repository": {}
+}

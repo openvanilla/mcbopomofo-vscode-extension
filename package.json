@@ -1,0 +1,47 @@
+{
+  "name": "mcbopomofo-vscode-extension",
+  "displayName": "McBopomofo Data Editor",
+  "description": "Syntax highlighting for McBopomofo data and excluded-phrases files.",
+  "version": "0.1.0",
+  "publisher": "zonble",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "mcbopomofo",
+    "bopomofo",
+    "zhuyin",
+    "input method"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zonble/mcbopomofo-vscode-extension.git"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "mcbopomofo-data",
+        "aliases": [
+          "McBopomofo Data",
+          "mcbopomofo-data"
+        ],
+        "extensions": [],
+        "filenames": [
+          "data.txt",
+          "excluded-phrases.txt"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mcbopomofo-data",
+        "scopeName": "source.mcbopomofo-data",
+        "path": "./syntaxes/mcbopomofo-data.tmLanguage.json"
+      }
+    ]
+  }
+}
