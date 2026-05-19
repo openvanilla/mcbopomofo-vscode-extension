@@ -9,12 +9,26 @@
     },
     {
       "name": "meta.data-line.mcbopomofo-data",
-      "match": "^(\\S+)(\\s+)([ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦㄧㄨㄩ˙ˊˇˋ]+(-[ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦㄧㄨㄩ˙ˊˇˋ]+)*|_\\S+)$",
-      "captures": {
+      "begin": "^(?=\\S+\\s+(?:[ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦㄧㄨㄩ˙ˊˇˋ]+(?:-[ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦㄧㄨㄩ˙ˊˇˋ]+)*|_\\S+)$)(\\S+)(\\s+)",
+      "beginCaptures": {
         "1": { "name": "string.unquoted.mcbopomofo-data" },
-        "2": { "name": "punctuation.separator.mcbopomofo-data" },
-        "3": { "name": "entity.name.function.mcbopomofo-data" }
-      }
+        "2": { "name": "punctuation.separator.mcbopomofo-data" }
+      },
+      "end": "$",
+      "patterns": [
+        {
+          "match": "-",
+          "name": "keyword.operator.hyphen.mcbopomofo-data"
+        },
+        {
+          "match": "[ㄅㄆㄇㄈㄉㄊㄋㄌㄍㄎㄏㄐㄑㄒㄓㄔㄕㄖㄗㄘㄙㄚㄛㄜㄝㄞㄟㄠㄡㄢㄣㄤㄥㄦㄧㄨㄩ˙ˊˇˋ]+",
+          "name": "entity.name.function.mcbopomofo-data"
+        },
+        {
+          "match": "_\\S+",
+          "name": "entity.name.function.mcbopomofo-data"
+        }
+      ]
     },
     {
       "name": "invalid.illegal.mcbopomofo-data",
