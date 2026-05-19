@@ -42,6 +42,16 @@
         "scopeName": "source.mcbopomofo-data",
         "path": "./syntaxes/mcbopomofo-data.tmLanguage.json"
       }
+    ],
+    "keybindings": [
+      {
+        "command": "editor.action.commentLine",
+        "key": "cmd+/",
+        "mac": "cmd+/",
+        "linux": "ctrl+/",
+        "win": "ctrl+/",
+        "when": "editorTextFocus && editorLangId == mcbopomofo-data"
+      }
     ]
   }
 }
