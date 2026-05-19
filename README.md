@@ -1,5 +1,7 @@
 # McBopomofo Data Editor for VS Code
 
+![screenshot](screenshot.png)
+
 This extension provides syntax highlighting for McBopomofo `data.txt` and `excluded-phrases.txt` files.
 
 ## Features
