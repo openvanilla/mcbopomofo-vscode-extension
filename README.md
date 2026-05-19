@@ -21,3 +21,13 @@ This extension provides syntax highlighting for McBopomofo `data.txt` and `exclu
 3. In the new window, open the provided `test_data.txt` file (or create a file named `data.txt` or `excluded-phrases.txt`).
 4. You should immediately see the syntax highlighting applied.
 5. **Making Changes:** If you modify the `syntaxes/mcbopomofo-data.tmLanguage.json` file, you need to reload the Extension Development Host window to see the changes. You can do this by opening the Command Palette (`Cmd+Shift+P` on macOS, `Ctrl+Shift+P` on Windows/Linux) in the test window and selecting **Developer: Reload Window**, or simply by pressing `Cmd+R` (`Ctrl+R`).
+
+## Compatibility
+
+This extension is built for Visual Studio Code, but because it is a standard TextMate grammar extension, it is fully compatible with various editors and IDEs forked from or based on VS Code, such as:
+
+- **VSCodium**: A community-driven, telemetry-free distribution of VS Code.
+- **Cursor**: An AI-powered code editor built on top of VS Code.
+- **Windsurf**: Another modern AI-driven IDE based on the VS Code architecture.
+- **Trae**: An adaptive AI IDE built on VS Code.
+- **GitHub Codespaces / Gitpod**: Web-based VS Code environments.
