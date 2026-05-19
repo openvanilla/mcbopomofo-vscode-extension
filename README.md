@@ -29,5 +29,6 @@ This extension is built for Visual Studio Code, but because it is a standard Tex
 - **VSCodium**: A community-driven, telemetry-free distribution of VS Code.
 - **Cursor**: An AI-powered code editor built on top of VS Code.
 - **Windsurf**: Another modern AI-driven IDE based on the VS Code architecture.
+- **Antigravity**: Google's AI-first agentic IDE, built as a fork of VS Code.
 - **Trae**: An adaptive AI IDE built on VS Code.
 - **GitHub Codespaces / Gitpod**: Web-based VS Code environments.
